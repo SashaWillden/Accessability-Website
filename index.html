@@ -1,0 +1,181 @@
+<html lang="en"><head>
+        <!--   Title of website     -->
+        <title>Test</title>
+        <!--     META charset       -->
+        <meta charset="UTF-8">
+        <!--   META viewport for scale on screen     -->
+        <meta name="viewport" content="initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!--   Custom stylesheet CSS     -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--    Font Awesome library    -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+        <!--    Custom Javascript scripts    -->
+        <script src="js/script.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+   <!--  Body content  -->
+    <body>
+<!--   Header content     -->
+        
+        <!--    Nav content    -->
+        <nav>
+            
+            
+            
+            
+        </nav>
+        <!--    Panel container for usability and accessability bar    -->
+        <div class="panel" style="display: block;">
+                <!--      NavBar container and for styles Horizonal  layer        -->
+                <div id="navBar" class="transparent">
+                    <ul>
+                        <li>
+                            <!--           drop down when clicking on icons                 -->
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                <i class="fas fa-font"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <!--                  displays the font styles                  -->
+                                    <a class="arial" onclick="changeFontFamily('Arial, sans-serif')">Arial</a>
+                                    <a class="courier" onclick="changeFontFamily('Courier, monospace')">Courier</a>
+                                    <a class="times" onclick="changeFontFamily('serif')">Times New Roman</a>
+                                    <a class="comic" onclick="changeFontFamily('Comic Sans MS')">Comic Sans MS</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                <i class="fas fa-palette"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <!--                  table of colours when clicked                  -->
+                                    <table style="width:50px;height:160px">
+                                        <tbody>
+                                            <!--                         shows the colours and from js of text                       -->
+                                            <tr>
+                                                <td onclick="turnblack()" style="background-color:#000000 "></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="turnblue()" style="background-color:#0000ff "></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="turnred()" style="background-color:#ff0000"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="turngreen()" style="background-color:#008000"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                <i class="fas fa-fill-drip"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <table style="width:50px;height:315px">
+                                        <tbody>
+                                            <!--                       shows the colours of background and from js of background                     -->
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#ffffff"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#79a6d2"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#ff6666"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#aaff80"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#9999ff"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#70dbdb"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#ffa366"></td>
+                                            </tr>
+                                            <tr>
+                                                <td onclick="bgChange(this.style.backgroundColor)" style="background-color:#8f8f8f"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <!--                   shows icon and js increase text             -->
+                                <button class="dropbtn" type="button" id="plustext" onclick="resizeText(1)">
+                                <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <!--                   shows icon and js decrease text             -->
+                                <button class="dropbtn" type="button" id="minustext" onclick="resizeText(-1)">
+                                <i class="fas fa-minus"></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        <!--     tab to pull-me from js, styled and icon for pull-me  -->
+        <div class="pull-me">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <!--    main-content from use of js contents for background, text colour, fonts and sizes    -->
+        <div id="main-content" style="font-size: 1.2em; color: black;">
+            <div class="container">
+                <!--        js familyfont        -->
+                    <div id="familyfont" style="font-family: serif;">
+                        <!--           header style 1             -->
+                        <h1>Test</h1>
+                        <!--              break line          -->
+                        <br>
+                        <hr>
+                        <!-- Breadcrumbs and ordered list-->
+                        
+
+	<div class="row"><div class="container text-center my-3">
+        <h3>Test</h3>
+        <!-- News content -->
+                        
+        
+                        
+    
+
+
+
+</div>
+        
+    </div>
+  </div>
+        
+        
+    </div>
+            </div>
+        
+
+
+
+        <!-- Footer -->
+        
+    
+</body></html>
